@@ -16,6 +16,20 @@ let inputString = String(data: stdin.availableData, encoding: NSUTF8StringEncodi
 
 class Parser {
     
+    func parsePath(imput:String) -> [Path] {
+        var array = [Path]()
+        
+        let data = imput.componentsSeparatedByString(",")
+        
+        for it in data {
+            let path:Path = Path()
+            path.filePath = it
+            array.append(path)
+        }
+        
+        return array
+    }
+    
     func parseAccount(file:String) -> [Account] {
         
         var array = [Account]()
@@ -106,6 +120,8 @@ class Loader {
         if let file = NSFileManager.defaultManager().contentsAtPath(pathScaned),
             let fileData = String(data: file, encoding: NSUTF8StringEncoding) {
             return scanString(fileData, delimiter: ",", returnWithDelimiter: true)
+        } else {
+            print("Please, run again and insert a valid path")
         }
         
         return String()
@@ -171,13 +187,19 @@ class Account {
 class Transaction {
     var account:Int? = nil
     var transaction:Int? = nil
-    
+}
+
+class Path {
+    var filePath:String? = nil
 }
 
 let loader = Loader()
 let parser = Parser()
 
 //let acc = parser.parseAccount(loader.loadFile("/Users/mateuscampos/Desktop/teste.CSV"))
+
+let pathScaned = loader.scanString(inputString!, delimiter: ",", returnWithDelimiter: true)
+let paths = parser.parsePath(pathScaned)
 
 let fileScaned = loader.loadFile(inputString!, returnWithDelimiter:true)
 //let accs = parser.parseAccount(fileScaned)
