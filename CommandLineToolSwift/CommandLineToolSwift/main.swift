@@ -13,6 +13,7 @@ let inputString = String(data: stdin.availableData, encoding: NSUTF8StringEncodi
 
 let loader = Loader()
 let parser = Parser()
+let bank = Bank()
 
 let pathScaned = loader.scanString(inputString!, delimiter: ",", returnWithDelimiter: true)
 let paths = parser.parsePath(pathScaned)
@@ -22,4 +23,4 @@ let fileTransaction = loader.loadFile((paths.last?.filePath)!, returnWithDelimit
 
 let accounts = parser.parseAccount(fileAcc)
 let transactions = parser.parseTransaction(fileTransaction)
-
+let accsTransaction = bank.manage(accounts, transactions: transactions)
