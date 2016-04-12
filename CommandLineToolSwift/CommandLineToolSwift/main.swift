@@ -8,20 +8,18 @@
 
 import Foundation
 
-//Read from imput
 let stdin = NSFileHandle.fileHandleWithStandardInput()
 let inputString = String(data: stdin.availableData, encoding: NSUTF8StringEncoding)
 
 let loader = Loader()
 let parser = Parser()
 
-//let acc = parser.parseAccount(loader.loadFile("/Users/mateuscampos/Desktop/teste.CSV"))
-
 let pathScaned = loader.scanString(inputString!, delimiter: ",", returnWithDelimiter: true)
 let paths = parser.parsePath(pathScaned)
 
-let fileScaned = loader.loadFile(inputString!, returnWithDelimiter:true)
-//let accs = parser.parseAccount(fileScaned)
-let trans = parser.parseTransaction(fileScaned)
+let fileAcc = loader.loadFile((paths.first?.filePath)!, returnWithDelimiter:true)
+let fileTransaction = loader.loadFile((paths.last?.filePath)!, returnWithDelimiter: true)
 
-//Pase file into a object
+let accounts = parser.parseAccount(fileAcc)
+let transactions = parser.parseTransaction(fileTransaction)
+
