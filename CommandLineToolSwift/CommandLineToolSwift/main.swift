@@ -8,12 +8,14 @@
 
 import Foundation
 
+print("Provide a full path of a file separated by ',' (comma) ex: /Users/mateuscampos/Documents/Mateus/Projetos/CommandLineTool/CommandLineToolSwift/resources/accs.csv,/Users/mateuscampos/Documents/Mateus/Projetos/CommandLineTool/CommandLineToolSwift/resources/transactions.csv")
 let stdin = NSFileHandle.fileHandleWithStandardInput()
 let inputString = String(data: stdin.availableData, encoding: NSUTF8StringEncoding)
 
 let loader = Loader()
 let parser = Parser()
 let bank = Bank()
+let output = Output()
 
 let pathScaned = loader.scanString(inputString!, delimiter: ",", returnWithDelimiter: true)
 let paths = parser.parsePath(pathScaned)
@@ -24,3 +26,4 @@ let fileTransaction = loader.loadFile((paths.last?.filePath)!, returnWithDelimit
 let accounts = parser.parseAccount(fileAcc)
 let transactions = parser.parseTransaction(fileTransaction)
 let accsTransaction = bank.manage(accounts, transactions: transactions)
+output.output(accsTransaction)

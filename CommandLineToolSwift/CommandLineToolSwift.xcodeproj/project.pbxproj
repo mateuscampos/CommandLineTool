@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B5614511CBDCC2B00D9E904 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5614501CBDCC2B00D9E904 /* Output.swift */; };
+		7B5614601CBDD53200D9E904 /* ParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B56145F1CBDD53200D9E904 /* ParserSpec.swift */; };
+		7B5614611CBDD75500D9E904 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB65C931CBC73F3000086D1 /* Parser.swift */; };
+		7B5614621CBDD75900D9E904 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB65C951CBC7464000086D1 /* Loader.swift */; };
+		7B5614631CBDD75D00D9E904 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB65C971CBC7498000086D1 /* Path.swift */; };
+		7B5614641CBDD75F00D9E904 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB65C991CBC74B5000086D1 /* Transaction.swift */; };
+		7B5614651CBDD76300D9E904 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB65C9B1CBC74D0000086D1 /* Account.swift */; };
+		7B5614661CBDD76600D9E904 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB65C9D1CBC7EB1000086D1 /* Bank.swift */; };
+		7B5614671CBDD76900D9E904 /* Output.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5614501CBDCC2B00D9E904 /* Output.swift */; };
+		7B5614691CBDD7D200D9E904 /* LoaderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5614681CBDD7D200D9E904 /* LoaderSpec.swift */; };
 		7BB65C941CBC73F3000086D1 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB65C931CBC73F3000086D1 /* Parser.swift */; };
 		7BB65C961CBC7464000086D1 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB65C951CBC7464000086D1 /* Loader.swift */; };
 		7BB65C981CBC7498000086D1 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB65C971CBC7498000086D1 /* Path.swift */; };
@@ -29,6 +39,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7B5614501CBDCC2B00D9E904 /* Output.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Output.swift; sourceTree = "<group>"; };
+		7B5614561CBDD48C00D9E904 /* CommandLineToolSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandLineToolSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B56145A1CBDD48C00D9E904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B56145E1CBDD53200D9E904 /* CommandLineToolSwiftTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CommandLineToolSwiftTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B56145F1CBDD53200D9E904 /* ParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserSpec.swift; sourceTree = "<group>"; };
+		7B5614681CBDD7D200D9E904 /* LoaderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderSpec.swift; sourceTree = "<group>"; };
 		7BB65C931CBC73F3000086D1 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		7BB65C951CBC7464000086D1 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		7BB65C971CBC7498000086D1 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
@@ -40,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7B5614531CBDD48C00D9E904 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BBF61571CBA9535003198CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,10 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B5614571CBDD48C00D9E904 /* CommandLineToolSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B56145A1CBDD48C00D9E904 /* Info.plist */,
+				7B56145F1CBDD53200D9E904 /* ParserSpec.swift */,
+				7B5614681CBDD7D200D9E904 /* LoaderSpec.swift */,
+				7B56145E1CBDD53200D9E904 /* CommandLineToolSwiftTests-Bridging-Header.h */,
+			);
+			path = CommandLineToolSwiftTests;
+			sourceTree = "<group>";
+		};
 		7BBF61511CBA9535003198CD = {
 			isa = PBXGroup;
 			children = (
 				7BBF615C1CBA9535003198CD /* CommandLineToolSwift */,
+				7B5614571CBDD48C00D9E904 /* CommandLineToolSwiftTests */,
 				7BBF615B1CBA9535003198CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				7BBF615A1CBA9535003198CD /* CommandLineToolSwift */,
+				7B5614561CBDD48C00D9E904 /* CommandLineToolSwiftTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +112,7 @@
 				7BB65C991CBC74B5000086D1 /* Transaction.swift */,
 				7BB65C9B1CBC74D0000086D1 /* Account.swift */,
 				7BB65C9D1CBC7EB1000086D1 /* Bank.swift */,
+				7B5614501CBDCC2B00D9E904 /* Output.swift */,
 			);
 			path = CommandLineToolSwift;
 			sourceTree = "<group>";
@@ -83,6 +120,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7B5614551CBDD48C00D9E904 /* CommandLineToolSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B56145B1CBDD48C00D9E904 /* Build configuration list for PBXNativeTarget "CommandLineToolSwiftTests" */;
+			buildPhases = (
+				7B5614521CBDD48C00D9E904 /* Sources */,
+				7B5614531CBDD48C00D9E904 /* Frameworks */,
+				7B5614541CBDD48C00D9E904 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CommandLineToolSwiftTests;
+			productName = CommandLineToolSwiftTests;
+			productReference = 7B5614561CBDD48C00D9E904 /* CommandLineToolSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		7BBF61591CBA9535003198CD /* CommandLineToolSwift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BBF61611CBA9535003198CD /* Build configuration list for PBXNativeTarget "CommandLineToolSwift" */;
@@ -110,6 +164,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Mateus Campos";
 				TargetAttributes = {
+					7B5614551CBDD48C00D9E904 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					7BBF61591CBA9535003198CD = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -128,15 +185,43 @@
 			projectRoot = "";
 			targets = (
 				7BBF61591CBA9535003198CD /* CommandLineToolSwift */,
+				7B5614551CBDD48C00D9E904 /* CommandLineToolSwiftTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		7B5614541CBDD48C00D9E904 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		7B5614521CBDD48C00D9E904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B5614671CBDD76900D9E904 /* Output.swift in Sources */,
+				7B5614611CBDD75500D9E904 /* Parser.swift in Sources */,
+				7B5614601CBDD53200D9E904 /* ParserSpec.swift in Sources */,
+				7B5614631CBDD75D00D9E904 /* Path.swift in Sources */,
+				7B5614691CBDD7D200D9E904 /* LoaderSpec.swift in Sources */,
+				7B5614621CBDD75900D9E904 /* Loader.swift in Sources */,
+				7B5614641CBDD75F00D9E904 /* Transaction.swift in Sources */,
+				7B5614651CBDD76300D9E904 /* Account.swift in Sources */,
+				7B5614661CBDD76600D9E904 /* Bank.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BBF61561CBA9535003198CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5614511CBDCC2B00D9E904 /* Output.swift in Sources */,
 				7BB65C941CBC73F3000086D1 /* Parser.swift in Sources */,
 				7BBF615E1CBA9535003198CD /* main.swift in Sources */,
 				7BB65C981CBC7498000086D1 /* Path.swift in Sources */,
@@ -150,6 +235,33 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		7B56145C1CBDD48C00D9E904 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CommandLineToolSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mateus-Campos.CommandLineToolSwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CommandLineToolSwiftTests/CommandLineToolSwiftTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B56145D1CBDD48C00D9E904 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CommandLineToolSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Mateus-Campos.CommandLineToolSwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CommandLineToolSwiftTests/CommandLineToolSwiftTests-Bridging-Header.h";
+			};
+			name = Release;
+		};
 		7BBF615F1CBA9535003198CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -249,6 +361,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7B56145B1CBDD48C00D9E904 /* Build configuration list for PBXNativeTarget "CommandLineToolSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B56145C1CBDD48C00D9E904 /* Debug */,
+				7B56145D1CBDD48C00D9E904 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7BBF61551CBA9535003198CD /* Build configuration list for PBXProject "CommandLineToolSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
