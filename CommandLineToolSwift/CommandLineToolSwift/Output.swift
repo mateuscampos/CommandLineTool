@@ -12,7 +12,7 @@ class Output {
     
     func output(output:[Account]) {
         
-        var outputArray:Array<String> = Array()
+        var outputArray:Array<String>! = Array()
         
         for it in output {
             outputArray.append(String(it.account))

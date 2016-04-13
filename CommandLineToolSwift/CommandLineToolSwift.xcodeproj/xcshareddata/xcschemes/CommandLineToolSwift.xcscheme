@@ -29,6 +29,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7B5614551CBDD48C00D9E904"
+               BuildableName = "CommandLineToolSwiftTests.xctest"
+               BlueprintName = "CommandLineToolSwiftTests"
+               ReferencedContainer = "container:CommandLineToolSwift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
