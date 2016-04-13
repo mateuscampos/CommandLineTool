@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites tests='2' failures='0'>
+  <testsuite name='CommandLineToolSwiftTests.LoaderSpec' tests='1' failures='0'>
+    <testcase classname='CommandLineToolSwiftTests.LoaderSpec' name='testLoader' time='0.002'/>
+  </testsuite>
+  <testsuite name='CommandLineToolSwiftTests.ParserSpec' tests='1' failures='0'>
+    <testcase classname='CommandLineToolSwiftTests.ParserSpec' name='testParser' time='0.001'/>
+  </testsuite>
+</testsuites>

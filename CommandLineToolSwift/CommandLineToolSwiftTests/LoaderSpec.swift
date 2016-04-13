@@ -27,6 +27,7 @@ class LoaderSpec: XCTestCase {
         
         XCTAssertNotNil(loader, "should not be nil")
         
+        //esse teste quebrará com outras maquinas
         let object = "/Users/mateuscampos/Documents/Mateus/Projetos/CommandLineTool/CommandLineToolSwift/resources/accs.csv"
         
         let loadedObject = loader.loadFile(object, returnWithDelimiter: false)
