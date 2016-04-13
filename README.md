@@ -10,6 +10,7 @@ I was chalanged to do a command line tool, with unit tests, this is a demo proje
 # To do
 1. Refactor the way it gets the path of files
 2. Refactor and Finish unit tests
+3. Refactor unwraped optionals in output file
 
 # Known Problems
 1. Some tests will fail in other computers because of paths
